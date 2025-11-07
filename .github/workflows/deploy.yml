@@ -7,8 +7,8 @@ on:
     branches: [ main ]
 
 env:
-  REGISTRY: docker.io
-  IMAGE_PREFIX: ${{ secrets.DOCKERHUB_USERNAME }}
+  REGISTRY: docker.io #site of the repo in use e.g aws, dockerhub etc
+  IMAGE_PREFIX: ${{ secrets.DOCKERHUB_USERNAME }} #the prefix we have been using to deploy to dockerhub
 
 jobs:
   build-backend:
